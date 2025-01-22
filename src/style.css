@@ -3,8 +3,29 @@ body {
 }
 header {
   max-width: 600px;
-  margin: 10px auto;
-  padding: 30px;
+  margin: 0 auto;
+  padding: 30px 0px 30px 30px;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.search-input {
+  background-color: #f9f7fe;
+  border: none;
+  color: #b2b2b3;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.search-button {
+  background-color: hsl(257, 92%, 59%);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   text-align: center;
 }
 main {
