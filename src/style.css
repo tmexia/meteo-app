@@ -90,6 +90,13 @@ form {
   justify-content: center;
 }
 
+.humidity-value {
+  color: #dda853;
+}
+.wind-value {
+  color: #dda853;
+}
+
 footer {
   max-width: 600px;
   margin: 10px auto;
