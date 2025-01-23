@@ -1,11 +1,11 @@
 body {
-  background-color: #fbf5dd;
+  background-color: #a6cdc6;
   font-family: "Roboto", serif;
 }
 form {
   background-color: #dda853;
   max-width: 600px;
-  margin: 10px auto;
+  margin: 50px auto 20px;
   padding: 30px;
   border-radius: 15px;
   display: flex;
@@ -32,26 +32,62 @@ form {
   width: 20%;
 }
 .weather-container {
-  background-color: #16404d;
+  background-color: #fbf5dd;
   max-width: 600px;
   margin: 10px auto;
   padding: 30px;
   border-radius: 15px;
   text-align: center;
-}
-.date {
-  color: #fbf5dd;
+  color: #16404d;
 }
 .city {
-  color: white;
+  color: #16404d;
   font-size: 40px;
 }
 .current-conditions {
-  background-color: #a6cdc6;
+  background-color: #16404d;
+  color: white;
   max-width: 580px;
   margin: 10px auto;
-  padding: 30px;
+  padding: 10px 40px;
   border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.temperature-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.current-temperature {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+.temperature-value {
+  color: #dda853;
+  font: bold;
+  font-size: 50px;
+}
+.temperature-unit {
+  margin-top: 7px;
+  color: #dda853;
+  font: bold;
+  font-size: 20px;
+}
+
+.icon {
+  font-size: 150px;
+  margin: 0px;
+}
+
+.weather-details {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 footer {
@@ -60,6 +96,7 @@ footer {
   text-align: center;
   padding: 30px;
   color: #16404d;
+  font-size: 15px;
 }
 a {
   color: #dda853;
