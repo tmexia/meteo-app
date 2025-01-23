@@ -1,13 +1,21 @@
 body {
-  background-color: rgb(222, 220, 254);
+  background-color: #fbf5dd;
+  font-family: "Roboto", serif;
 }
 header {
   max-width: 600px;
   margin: 0 auto;
   padding: 30px 0px 30px 30px;
   text-align: right;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+}
+form {
+  background-color: #dda853;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
 }
 .search-input {
   background-color: #f9f7fe;
@@ -15,33 +23,41 @@ header {
   color: #b2b2b3;
   padding: 10px;
   border-radius: 5px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 .search-button {
-  background-color: hsl(257, 92%, 59%);
+  background-color: #16404d;
   border: none;
   color: white;
   padding: 10px;
   border-radius: 5px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   text-align: center;
 }
-main {
+.weather-container {
+  background-color: #16404d;
   max-width: 600px;
   margin: 10px auto;
   padding: 30px;
   border-radius: 15px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: orange;
-  background-color: rgb(4, 1, 80);
-  color: white;
+  text-align: center;
 }
+.current-conditions {
+  background-color: #a6cdc6;
+  max-width: 580px;
+  margin: 10px auto;
+  padding: 30px;
+  border-radius: 15px;
+}
+
 footer {
   max-width: 600px;
   margin: 10px auto;
   text-align: center;
   padding: 30px;
+  color: #16404d;
+}
+a {
+  color: #dda853;
+  font: bold;
 }
