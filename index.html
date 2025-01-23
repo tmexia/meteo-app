@@ -14,20 +14,20 @@
   </head>
   <body>
     <div class="app">
-      <header>SheCodes</header>
+      <form>
+        <input
+          type="search"
+          placeholder="Enter a city"
+          required
+          class="search-input"
+        />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+
       <main>
-        <form>
-          <input
-            type="search"
-            placeholder="Enter a city"
-            required
-            class="search-input"
-          />
-          <input type="submit" value="Search" class="search-button" />
-        </form>
         <div class="weather-container">
-          <p>Wednesday 15 Jan 2025 16:20</p>
-          <h1>San Francisco</h1>
+          <p class="date">Wednesday 15 Jan 2025 16:20</p>
+          <h1 class="city">San Francisco</h1>
           <div class="current-conditions">
             <p>Cloudy ☁️</p>
             <p>Temperature: 8ºC</p>
