@@ -77,3 +77,5 @@ function formatDate() {
 }
 
 formatDate(new Date());
+
+//Falta mudar o icon e ver a explicação
