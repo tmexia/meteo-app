@@ -1,9 +1,20 @@
 function displayWeather(response) {
-  let currentTemperature = Math.round(response.data.temperature.current);
-  let temperatureElement = document.querySelector("#temperature-value");
   let cityElement = document.querySelector("#city");
+  let currentTemperature = Math.round(response.data.temperature.current);
+  let currentHumidity = response.data.temperature.humidity;
+  let currentWind = response.data.wind.speed;
+  let conditionsDescription = response.data.condition.description;
+  let temperatureElement = document.querySelector("#temperature-value");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  let descriptionElement = document.querySelector("#conditions-description");
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = currentTemperature;
+  humidityElement.innerHTML = `${currentHumidity} %`;
+  windElement.innerHTML = `${currentWind} km/h`;
+  descriptionElement.innerHTML =
+    conditionsDescription.charAt(0).toUpperCase() +
+    conditionsDescription.slice(1);
 }
 
 function searchCity(city) {
@@ -53,7 +64,7 @@ let months = [
 let month = months[now.getMonth()];
 let year = now.getFullYear();
 let hour = now.getHours();
-let minutes = now.getMinutes();
+let minutes = now.getMinutes().toString().padStart(2, "0");
 console.log(weekday, date, month, year, hour, minutes);
 
 let formattedDate = `${weekday}, ${date} ${month} ${year} ${hour}:${minutes}`;

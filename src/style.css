@@ -90,10 +90,7 @@ form {
   justify-content: center;
 }
 
-.humidity-value {
-  color: #dda853;
-}
-.wind-value {
+.details-values {
   color: #dda853;
 }
 
