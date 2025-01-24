@@ -14,21 +14,21 @@
   </head>
   <body>
     <div class="app">
-      <form>
+      <form id="search-form">
         <input
           type="search"
           placeholder="Enter a city"
           required
           class="search-input"
+          id="search-input"
         />
         <input type="submit" value="Search" class="search-button" />
       </form>
 
       <main>
         <div class="weather-container">
-          <h1 class="city">San Francisco</h1>
+          <h1 class="city" id="city">San Francisco</h1>
           <p class="date">Wednesday, 15 Jan 2025 16:20</p>
-
           <div class="current-conditions">
             <div class="temperature-description">
               <p class="current-temperature">
@@ -57,5 +57,6 @@
         <a href="https://meteo-mexia.netlify.app/" target="_blank">Netlify</a>.
       </footer>
     </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
