@@ -8,6 +8,8 @@ function displayWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let descriptionElement = document.querySelector("#conditions-description");
+  let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#weather-icon");
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = currentTemperature;
   humidityElement.innerHTML = `${currentHumidity} %`;
@@ -15,8 +17,8 @@ function displayWeather(response) {
   descriptionElement.innerHTML =
     conditionsDescription.charAt(0).toUpperCase() +
     conditionsDescription.slice(1);
-  let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatDate(date);
+  iconElement.innerHTML = `<img src=${response.data.condition.icon_url} class="weather-icon">`;
 }
 
 function searchCity(city) {

@@ -78,9 +78,9 @@ form {
   font-size: 20px;
 }
 
-.icon {
-  font-size: 150px;
-  margin: 0px;
+.weather-icon {
+  width: 120px;
+  height: 120px;
 }
 
 .weather-details {
