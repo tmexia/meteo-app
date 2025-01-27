@@ -12,7 +12,7 @@ form {
 }
 .search-input {
   background-color: #f9f7fe;
-  color: #b2b2b3;
+  color: #717171;
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -43,6 +43,7 @@ form {
 .city {
   color: #16404d;
   font-size: 40px;
+  margin-top: 10px;
 }
 .current-conditions {
   background-color: #16404d;
@@ -54,16 +55,14 @@ form {
   display: flex;
   justify-content: space-between;
 }
-
 .temperature-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .current-temperature {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0px;
 }
 .temperature-value {
@@ -77,7 +76,6 @@ form {
   font: bold;
   font-size: 20px;
 }
-
 .weather-icon {
   width: 120px;
   height: 120px;
@@ -93,7 +91,6 @@ form {
 .details-values {
   color: #dda853;
 }
-
 footer {
   max-width: 600px;
   margin: 10px auto;
