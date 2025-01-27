@@ -15,6 +15,8 @@ function displayWeather(response) {
   descriptionElement.innerHTML =
     conditionsDescription.charAt(0).toUpperCase() +
     conditionsDescription.slice(1);
+  let dateElement = document.querySelector("#date");
+  dateElement.innerHTML = formatDate(date);
 }
 
 function searchCity(city) {
@@ -34,48 +36,37 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Lisbon");
 
-let now = new Date();
+function formatDate(date) {
+  let now = new Date();
 
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let weekday = days[now.getDay()];
-let date = now.getDate();
-let months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-let month = months[now.getMonth()];
-let year = now.getFullYear();
-let hour = now.getHours();
-let minutes = now.getMinutes().toString().padStart(2, "0");
-console.log(weekday, date, month, year, hour, minutes);
-
-let formattedDate = `${weekday}, ${date} ${month} ${year} ${hour}:${minutes}`;
-console.log(formattedDate);
-
-function formatDate() {
-  let formattedDate = `${weekday}, ${date} ${month} ${year} ${hour}:${minutes}`;
-  let dateElement = document.querySelector("#date");
-  dateElement.innerHTML = formattedDate;
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let weekday = days[now.getDay()];
+  let day = now.getDate();
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let month = months[now.getMonth()];
+  let year = now.getFullYear();
+  let hour = now.getHours();
+  let minutes = now.getMinutes().toString().padStart(2, "0");
+  return `${weekday}, ${day} ${month} ${year} ${hour}:${minutes}`;
 }
-
-formatDate(new Date());
-
-//Falta mudar o icon e ver a explicação
