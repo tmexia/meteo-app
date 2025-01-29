@@ -91,6 +91,18 @@ form {
 .details-values {
   color: #dda853;
 }
+
+.weather-forecast {
+  background-color: #16404d;
+  color: white;
+  max-width: 580px;
+  margin: 10px auto;
+  padding: 10px 40px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
 footer {
   max-width: 600px;
   margin: 10px auto;
