@@ -103,6 +103,19 @@ form {
   justify-content: space-between;
 }
 
+.forecast-icon {
+  font-size: 50px;
+}
+
+.forecast-temperature-max {
+  color: #dda853;
+  font: bold;
+}
+.forecast-temperature-min {
+  color: #dbc49f;
+  font: bold;
+}
+
 footer {
   max-width: 600px;
   margin: 10px auto;
