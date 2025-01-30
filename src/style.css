@@ -34,6 +34,7 @@ form {
 .weather-container {
   background-color: #fbf5dd;
   max-width: 600px;
+  min-width: 500px;
   margin: 10px auto;
   padding: 30px;
   border-radius: 15px;
@@ -67,13 +68,13 @@ form {
 }
 .temperature-value {
   color: #dda853;
-  font: bold;
+
   font-size: 50px;
 }
 .temperature-unit {
   margin-top: 7px;
   color: #dda853;
-  font: bold;
+
   font-size: 20px;
 }
 .weather-icon {
@@ -100,20 +101,27 @@ form {
   padding: 10px 40px;
   border-radius: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
+.forecast-day {
+  padding: 5px;
+}
 .forecast-icon {
   font-size: 50px;
 }
 
+.forecast-temperatures {
+  display: flex;
+  justify-content: center;
+}
 .forecast-temperature-max {
   color: #dda853;
-  font: bold;
+  padding: 5px;
 }
 .forecast-temperature-min {
   color: #dbc49f;
-  font: bold;
+  padding: 5px;
 }
 
 footer {
