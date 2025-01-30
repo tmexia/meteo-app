@@ -88,7 +88,7 @@ function displayForecast() {
   <span class="forecast-temperature-min">8ºC</span>
 </div>`;
   });
-  let forecastElement = document.querySelector("#weather-forecast-day");
+  let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
 displayForecast();
