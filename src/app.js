@@ -79,6 +79,7 @@ function displayForecast() {
     forecastHtml =
       forecastHtml +
       `
+      <div class="forecast">
 <div class="forecast-day">${day}</div>
 <div class="forecast-icon">🌦️</div>
 <div class="forecast-temperatures">
@@ -86,7 +87,9 @@ function displayForecast() {
     <strong>20ºC</strong></span
   >
   <span class="forecast-temperature-min">8ºC</span>
-</div>`;
+</div>
+</div>
+`;
   });
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
