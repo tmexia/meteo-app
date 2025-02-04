@@ -114,7 +114,8 @@ form {
   padding: 5px;
 }
 .forecast-icon {
-  font-size: 50px;
+  width: 70px;
+  height: 70px;
 }
 
 .forecast-temperatures {
