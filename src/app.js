@@ -79,9 +79,6 @@ function formatForecastDay(timestamp) {
   return days[date.getDay()];
 }
 
-let dateTest = new Date(1738670400 * 1000);
-console.log(dateTest);
-
 function getForecast(city) {
   let apiKey = "2affcb912c0bbco36ateff4a191143bb";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
@@ -89,8 +86,6 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
-  console.log(response.data);
-
   let forecastHtml = "";
 
   response.data.daily.forEach(function (day, index) {

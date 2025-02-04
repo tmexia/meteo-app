@@ -4,7 +4,7 @@ body {
 }
 form {
   background-color: #dda853;
-  max-width: 600px;
+  width: 600px;
   margin: 50px auto 20px;
   padding: 30px;
   border-radius: 15px;
@@ -33,8 +33,7 @@ form {
 }
 .weather-container {
   background-color: #fbf5dd;
-  max-width: 600px;
-  min-width: 500px;
+  width: 600px;
   margin: 10px auto;
   padding: 30px;
   border-radius: 15px;
@@ -132,7 +131,7 @@ form {
 }
 
 footer {
-  max-width: 600px;
+  width: 600px;
   margin: 10px auto;
   text-align: center;
   padding: 30px;
